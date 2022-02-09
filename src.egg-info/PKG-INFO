@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: src
+Version: 0.0.1
+Summary: small package for ml pipline
+Home-page: https://github.com/SnehaAwhale/AIOps-NLP/tree/master
+Author: SnehaAwhale
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Commands used -
+
+
+```bash
+conda create -n env_name python=3.7 -y
+```
+
+```bash
+conda activate env_name
+```
+or 
+
+```bash
+source activate env_name
+```
+
+```bash
+pip install dvc
+```
+
+```bash
+git init
+```
+
+```bash
+dvc init
+```
+
+
+```bash
+dvc repro
+```
+
+```bash
+touch fileName.extension
+```
+
+
