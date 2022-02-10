@@ -8,3 +8,19 @@ stages:
     outs:
       - artifacts/raw_local_dir/data.csv
 
+  stage02:
+    cmd: python src/stage02_splitData.py --params=params.yaml
+    deps:
+      - stage02_splitData.py
+      - params.yaml
+      - config/config.yaml
+      - src/util/all_utils.py
+    params:
+      - base.random_state
+      - base.test_size
+
+    outs:
+      - artifacts/split_data_dir/train.csv
+      - artifacts/split_data_dir/test.csv
+
+

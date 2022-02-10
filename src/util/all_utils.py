@@ -11,3 +11,6 @@ def create_dir(dirs: list):
     for dir_path in dirs:
         os.makedirs(dir_path,exist_ok=True)
         print(f"directory has been created for {dir_path}")
+
+def save_loc_file(data,data_path):
+    data.to_csv(data_path,index=False)
