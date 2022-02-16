@@ -12,3 +12,6 @@ artifacts:
 
   model_dir: model_dir
   model_file: elastiNet.md
+
+  report : report_dir
+  scores : scores.json

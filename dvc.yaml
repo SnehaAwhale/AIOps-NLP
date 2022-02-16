@@ -40,3 +40,17 @@ stages:
       - artifacts/model_dir/elastiNet.md
 
 
+  stage04:
+    cmd: python stage04_evaluate.py
+    deps:
+      - stage04_evaluate.py
+      - params.yaml
+      - config/config.yaml
+      - src/util/all_utils.py
+      - artifacts/split_data_dir/train.csv
+      - artifacts/model_dir/elastiNet.md
+
+    outs:
+      - artifacts/report_dir/scores.json
+
+
